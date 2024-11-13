@@ -5,9 +5,9 @@ export const projects = [
     tasks: [
       {
         id: 0,
-        name: 'My first task',
+        title: 'My first task',
         description: 'a test task',
-        notes: '',
+        notes: 'test notes on my task',
         closed: false,
         tags: [],
         due: '2024-12-31'

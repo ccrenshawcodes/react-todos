@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import './App.css'
 import Nav from './components/Nav'
 import ProjectsList from './components/ProjectsList'
 import { projects } from './projects'
@@ -24,10 +23,15 @@ function App() {
 
   return (
     <>
-      <Nav />
-      <ProjectsList />
-      <TasksList project={currentProject} />
-      {currentTasks}
+      <div className="top-ribbons">
+        <Nav />
+        <ProjectsList />
+      </div>
+      
+      <div className="page-content">
+        <TasksList project={currentProject} />
+        {currentTasks}
+      </div>
     </>
   )
 }
